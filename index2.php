@@ -37,7 +37,9 @@
               <td class="bodyText"><div align="center"></div></td>
             </tr>
             <tr>
-              <td class="bodyText"><div align="center">Introduzca su usuario y password @Glifo</div></td>
+              <td class="bodyText"><div align="center">Introduzca su usuario y password <br>
+				  Versión 14-06-2020
+				  </div></td>
             </tr>
           </table>
         <p>&nbsp;</p>
