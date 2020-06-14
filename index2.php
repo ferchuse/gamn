@@ -37,7 +37,7 @@
               <td class="bodyText"><div align="center"></div></td>
             </tr>
             <tr>
-              <td class="bodyText"><div align="center">Introduzca su usuario y password </div></td>
+              <td class="bodyText"><div align="center">Introduzca su usuario y password @Glifo</div></td>
             </tr>
           </table>
         <p>&nbsp;</p>
