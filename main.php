@@ -357,7 +357,7 @@ function top($SESSION,$enter=0) {
 
 	  <tr>
 
-	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA</span></td>
+	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA SERVIDOR 2020</span></td>
 
 	  </tr>
 
@@ -576,7 +576,7 @@ function topsocio($SESSION,$enter=0) {
 
 	  <tr>
 
-	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA</span></td>
+	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA SERVIDOR 2020</span></td>
 
 	  </tr>
 
@@ -804,7 +804,7 @@ function top2($SESSION) {
 
 	  <tr>
 
-	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA</span></td>
+	    <td background="images/bannertop-bg.png"><span class="whiteText17">AUTOBUSES MEXICO NEXTLALPAN SA SERVIDOR 2020</span></td>
 
 	  </tr>
 
