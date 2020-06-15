@@ -129,20 +129,20 @@ function UpdateTickets($taquilla,$fechainicial,$fechafinal,$tickets){
 function ConectarDB(){
 	$msg="OK";
 	//Conexion con la base
-	if (!$MySQL=@mysql_connect('localhost', 'gamn', 'rXj8nBpwFu2tDwe2')) {
+	if (!$MySQL=@mysql_connect('localhost', 'syncsis_gamn', 'rXj8nBpwFu2tDwe2')) {
 		$t=time();
 		while (time()<$t+5) {}
-		if (!$MySQL=@mysql_connect('localhost', 'gamn', 'rXj8nBpwFu2tDwe2')) {
+		if (!$MySQL=@mysql_connect('localhost', 'syncsis_gamn', 'rXj8nBpwFu2tDwe2')) {
 			$t=time();
 			while (time()<$t+10) {}
-			if (!$MySQL=@mysql_connect('localhost', 'gamn', 'rXj8nBpwFu2tDwe2')) {
+			if (!$MySQL=@mysql_connect('localhost', 'syncsis_gamn', 'rXj8nBpwFu2tDwe2')) {
 			echo '<br><br><br><h3 align=center">Hay problemas de comunicaci&oacute;n con la Base de datos.</h3>';
 			echo '<h4>Por favor intente mas tarde.-</h4>';
 			exit;
 			}
 		}
 	}
-	mysql_select_db("gamn");
+	mysql_select_db("syncsis_gamn");
 	return $msg;
 }
 // Get our posted data if the service is being consumed
