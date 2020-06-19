@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 /*
 $Id: nusoap.php,v 1.114 2007/11/06 15:17:46 snichol Exp $
 
