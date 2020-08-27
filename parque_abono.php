@@ -443,7 +443,7 @@ if($_POST['ajax']==7){
 				$res1=mysql_query("SELECT COUNT(cve), SUM(monto) FROM abono_conteorapido WHERE estatus!='C' AND recaudacion=0 AND eco='".$row['unidad']."'");
 				$row1=mysql_fetch_array($res1);
 				echo $row1[0].'|'.$row1[1].'|';
-				$select="SELECT b.* FROM gamn.parque a INNER JOIN gps_otra_plataforma.dispositivos b ON a.imei = b.uniqueid where a.cve='".$row['unidad']."'";
+				$select="SELECT b.* FROM parque a INNER JOIN gps_otra_plataforma.dispositivos b ON a.imei = b.uniqueid where a.cve='".$row['unidad']."'";
 				$res1 = mysql_query($select) or die(mysql_error());
 				$primeros_puntos = array();
 				$_POST['fecha_ini'] = $row['fecha_cuenta'];
