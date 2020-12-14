@@ -405,7 +405,7 @@ if($_POST['ajax']==3){
 	}
 	exit();
 }
-
+//Buscar tarjeta
 if($_POST['ajax']==7){
 	$res=mysql_db_query($base,"SELECT * FROM parque_tarjetas WHERE cve='".$_POST['ftarjeta']."'");
 	if($row=mysql_fetch_array($res)){

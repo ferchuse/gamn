@@ -15,8 +15,8 @@
 				}
 			}
 		}
-		}
-		else{
+	}
+	else{
 		$base = "syncsis_gamn";
 		if (!$MySQL=@mysql_connect('localhost', 'syncsis_gamn', 'rXj8nBpwFu2tDwe2')) {
 			$t=time();
