@@ -277,6 +277,7 @@ if($_POST['ajax']==1){
 		<th>Abono Conteo Rapido</th>
 		<th>Tijera</th>
 		<th>Efectivo</th>
+		<th>Vale Diesel</th>
 		<th>Devolucion</th>
 		<th>Monto</th>
 		<th>Usuario<br>';
@@ -328,6 +329,7 @@ if($_POST['ajax']==1){
 			echo '<td align="right">'.number_format($Abono['monto_conteorapido']*$fac,2).'</td>';
 			echo '<td align="right">'.number_format($Abono['monto_tijera']*$fac,2).'</td>';
 			echo '<td align="right">'.number_format($Abono['efectivo']*$fac,2).'</td>';
+			echo '<td align="right">'.number_format($Abono['diesel']*$fac,2).'</td>';
 			echo '<td align="right">'.number_format($Abono['devolucion']*$fac,2).'</td>';
 			echo '<td align="right">'.number_format($Abono['monto']*$fac,2).'</td>';
 			echo '<td align="center">'.$array_usuario[$Abono['usuario']].'</td>';
@@ -342,8 +344,9 @@ if($_POST['ajax']==1){
 			$array_total[6]+=$Abono['monto_conteorapido']*$fac;
 			$array_total[7]+=$Abono['monto_tijera']*$fac;
 			$array_total[8]+=$Abono['efectivo']*$fac;
-			$array_total[9]+=$Abono['devolucion']*$fac;
-			$array_total[10]+=$Abono['monto']*$fac;
+			$array_total[9]+=$Abono['diesel']*$fac;
+			$array_total[10]+=$Abono['devolucion']*$fac;
+			$array_total[11]+=$Abono['monto']*$fac;
 		}
 		$col=6;
 		echo '<tr><td bgcolor="#E9F2F8" colspan="'.$col.'">'.$x.' Registro(s)</td>';
