@@ -963,8 +963,9 @@ if($_POST['cmd']==1){
 			}
 
 			function calcular(){
+			console.log("calcular")
 				var total = 0;
-				total = document.forma.monto_boletos.value/1 + document.forma.monto_taquillamovil.value/1 + document.forma.monto_abonomovil.value/1 + document.forma.monto_conteorapido.value/1 + document.forma.monto_tijera.value/1 + document.forma.efectivo.value/1 - document.forma.tcuenta.value/1;
+				total = document.forma.monto_boletos.value/1 + document.forma.monto_taquillamovil.value/1 + document.forma.monto_abonomovil.value/1 + document.forma.monto_conteorapido.value/1 + document.forma.monto_tijera.value/1 + document.forma.efectivo.value/1 - document.forma.tcuenta.value/1 - document.forma.diesel.value/1;
 				if(total>0)
 					document.forma.devolucion.value = total.toFixed(2);
 				else
