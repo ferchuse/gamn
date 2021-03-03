@@ -34,9 +34,9 @@
 		
 	}
 	
-	
-	// mysql_query("SET CHARACTER SET utf8") or die("Error en charset UTF8".mysql_error());
-	
+	// if($_SERVER["SERVER_NAME"] == "localhost") {
+		mysql_query("SET CHARACTER SET utf8") or die("Error en charset UTF8".mysql_error());
+	// }
 	// $base = "gamn";
 	$pre = "";
 	
