@@ -117,7 +117,7 @@
 				}
 			}
 			$ip=getRealIP();
-			$fechahora=date( "Y-m-d H:i:s" , strtotime ( "0 hour" , strtotime(date("Y-m-d H:i:s")) ) );
+			$fechahora=date( "Y-m-d H:i:s" , strtotime ( "-5 hour" , strtotime(date("Y-m-d H:i:s")) ) );
 			mysql_db_query($base,"INSERT ".$pre."registros_sistema SET usuario='".$Usuario['cve']."',entrada='".$fechahora."',ip='$ip'");
 			$reg_sistema=mysql_insert_id();
 			
@@ -1259,7 +1259,7 @@
 		
 		$hora= date("H:i:s", $new_U);
 		
-		$hora=date( "Y-m-d H:i:s" , strtotime ( "0 hour" , strtotime(date("Y-m-d H:i:s")) ) );
+		$hora=date( "Y-m-d H:i:s" , strtotime ( "-5 hour" , strtotime(date("Y-m-d H:i:s")) ) );
 		
 		$hora=date( "H:i:s" , strtotime ( "0 minute" , strtotime($hora) ) );
 		
@@ -1278,7 +1278,7 @@
 		
 		//$fecha= date("Y-m-d", $new_U);
 		
-		$fecha=date( "Y-m-d H:i:s" , strtotime ( "0 hour" , strtotime(date("Y-m-d H:i:s")) ) );
+		$fecha=date( "Y-m-d H:i:s" , strtotime ( "-5 hour" , strtotime(date("Y-m-d H:i:s")) ) );
 		
 		$fecha=date( "Y-m-d" , strtotime ( "0 minute" , strtotime($fecha) ) );
 		
@@ -1294,7 +1294,7 @@
 		
 		$//fechahora= date("Y-m-d H:i:s", $new_U);
 		
-		$fechahora=date( "Y-m-d H:i:s" , strtotime ( "0 hour" , strtotime(date("Y-m-d H:i:s")) ) );
+		$fechahora=date( "Y-m-d H:i:s" , strtotime ( "-5 hour" , strtotime(date("Y-m-d H:i:s")) ) );
 		
 		$fechahora=date( "Y-m-d H:i:s" , strtotime ( "0 minute" , strtotime($fechahora) ) );
 		
